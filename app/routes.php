@@ -34,3 +34,13 @@ Route::get('/event/1', 'EventController@show');
 
 // /company
 Route::get('/company', function() { return View::make('company.index'); });
+Route::get('/company/summary', function() { return View::make('company.summary'); });
+Route::get('/company/greeting', function() { return View::make('company.greeting'); });
+Route::get('/company/business_alliance', function() { return View::make('company.businessAlliance'); });
+Route::match(['GET', 'POST'], '/company/contact', 'CompanyController@contactInput');
+Route::group(['before' => 'csrf'], function()
+{
+	Route::post('/company/contact/confirm', 'CompanyController@contactConfirm');
+	Route::post('/company/contact/proc', 'CompanyController@contactProc');
+});
+Route::get('/company/contact/complete', 'CompanyController@contactComplete');

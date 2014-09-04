@@ -3,10 +3,10 @@
 	<ul class="lNav">
 		<li class="lNav01"><a href="/company">企業情報</a></li>
 		<ul>
-			<li class=""><a href="/company/summary">会社概要</a></li>
-			<li class=""><a href="/company/greeting">主宰あいさつ</a></li>
-			<li class=""><a href="/company/business_alliance">業務提携のご案内</a></li>
-			<li class=""><a href="https://organic-papa.sakura.ne.jp/company/mail/">お問合わせ</a></li>
+			<li class="{{{ $active == 'companySummary' ? 'active' : '' }}}"><a href="/company/summary">会社概要</a></li>
+			<li class="{{{ $active == 'companyGreeting' ? 'active' : '' }}}"><a href="/company/greeting">主宰あいさつ</a></li>
+			<li class="{{{ $active == 'companyBusinessAlliance' ? 'active' : '' }}}"><a href="/company/business_alliance">業務提携のご案内</a></li>
+			<li class="{{{ $active == 'companyContact' ? 'active' : '' }}}"><a href="/company/contact">お問合わせ</a></li>
 		</ul>
 	</ul>
 	<a href="/post/recipes"><img src="/images/ban_re.jpg" width="225" height="208"></a>

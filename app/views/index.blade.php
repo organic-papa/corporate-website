@@ -12,7 +12,7 @@
 					<div class="ContentsMain">
 						<a href="/farm/order_plantation"><img src="images/farmmer/001.jpg" width="223" height="163"></a>
 						<div class="ContentsIn">
-							<p class="labelformmerme">formmer</p>
+							<p class="labelformmerme">farmmer</p>
 							<p class="ContentsTitle"><a href="/farm/order_plantation">注文農園のススメ</a></p>
 							<p class="ContentsText">私たちは、お客様の様々なニーズに合わせて、農園新設工事を受託する企業です。すなわち、「のうえん屋」です。今は、同業者とお会いしたことがありませんが、</p>
 						</div>
@@ -23,14 +23,14 @@
 
 				<div class="ContentsBox">
 					<div class="ContentsMain">
-						<a href="/form/product"><img src="/images/farmmer/002.jpg" width="223" height="163"></a>
+						<a href="/farm/product"><img src="/images/farmmer/002.jpg" width="223" height="163"></a>
 							<div class="ContentsIn">
-							<p class="labelformmerme">formmer</p>
-							<p class="ContentsTitle"><a href="/form/product">農園づくりのコンセプト</a></p>
+							<p class="labelformmerme">farmmer</p>
+							<p class="ContentsTitle"><a href="/farm/product">農園づくりのコンセプト</a></p>
 							<p class="ContentsText">エコシステム全体が、高度に安定するしくみのサホートとなる間接的な働きかけを、圃場のエコシステムの中から見いだし、それを遵守し、ヒトはそのエコシステムの一部であるというスタンスで、</p>
 						</div>
 					</div>
-					<p class="ContentsLink"><a href="/form/product">続きを読む</a></p>
+					<p class="ContentsLink"><a href="/farm/product">続きを読む</a></p>
 				</div>
 				<!--/ContentsBox-->
 
@@ -105,21 +105,21 @@
 					<div class="pickupBoxL clearfix">
 						<h2>農園新設工事を受託します！</h2>
 						<div class="pickupPhoto">
-							<a href="/form/order_plantation"><img src="/images/contentsImages2.jpg" width="100px"></a>
+							<a href="/farm/order_plantation"><img src="/images/contentsImages2.jpg" width="100px"></a>
 						</div>
 						<div class="pickupText">
 							<p>私たちは、お客様の様々なニーズに合わせて、農園新設工事を受託する企業です。すなわち、「のうえん屋」で</p>
-							<p class="pickupLink"><a href="/form/order_plantation">続きを読む</a></p>
+							<p class="pickupLink"><a href="/farm/order_plantation">続きを読む</a></p>
 						</div>
 					</div><!--/pickupBoxL-->
 					<div class="pickupBoxR clearfix">
 						<h2>グリーンハンドは農業研修生を常時受入れ…</h2>
 						<div class="pickupPhoto">
-							<a href="/form/newfarmers"><img src="/images/contentsImages.jpg" width="100px"></a>
+							<a href="/farm/newfarmers"><img src="/images/contentsImages.jpg" width="100px"></a>
 						</div>
 						<div class="pickupText">
 							<p>希望される方は、現在の状況や実践したい農業のスタイルをできるだけ詳しく教えてください。</p>
-							<p class="pickupLink"><a href="/form/newfarmers">続きを読む</a></p>
+							<p class="pickupLink"><a href="/farm/newfarmers">続きを読む</a></p>
 						</div>
 					</div><!--/pickupBoxR-->
 				</div><!--/pickup-->
