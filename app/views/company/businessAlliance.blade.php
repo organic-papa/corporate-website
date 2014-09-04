@@ -18,15 +18,15 @@
 						<p>現在、日本中で代々培われてきた優良な農地が後継者不足で耕作放棄されて久しくなります。これからは、さらに深刻です。日本の原風景である里山は、どこに向かっていくのでしょう。また、同様に醗酵文化も食習慣の変動に伴い、販売は著しく低迷し、伝承的技術は継承されず、多くの希少な発酵食品の製造元は、その幕を閉じようとしています。</p>
 						<p>私たちオーガニックパパは、原材料からの本物志向を組み込み、商品力、販売力、管理力を強化し、貴重な伝統食を後世に遺すことに取り組み始めました。何としてでも遺したい一心で、経営譲渡をうけることもございます。有機農家と醗酵食品会社の固いパートナーシップが広がり、安定した経営がリレーできることを心より願っております。</p>
 						<div class="btn02">
-							<a href="mail/">業務提携のお問合わせはこちら</a>
+							<a href="/company/contact">業務提携のお問合わせはこちら</a>
 						</div>
-						<img src="../images/dot.png" class="dot" height="8" width="708">
+						<img src="/images/dot.png" class="dot" height="8" width="708">
 					</div>
 				</div>
 				<!--/subContents-->
 
 				<div class="btnEc">
-					<a href="https://organic-papa.sakura.ne.jp/post/mail/"><img src="../images/BTN_ec.png" width="663" height="101"></a>
+					<a href="https://organic-papa.sakura.ne.jp/post/mail/"><img src="/images/BTN_ec.png" width="663" height="101"></a>
 				</div>
 
 				<p id="back-top">

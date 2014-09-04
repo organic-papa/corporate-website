@@ -31,8 +31,8 @@
 				<p>オーガニックは、日本の宝もの。必ず後世に遺そう！</p>
 			</div>
 			<div class="formmerSubContents01">
-				<a href="https://organic-papa.sakura.ne.jp/company/mail/"><img src="/images/company04.png" width="227" height="229"></a>
-				<h3><a href="https://organic-papa.sakura.ne.jp/company/mail/">お問合わせ</a></h3>
+				<a href="/company/contact"><img src="/images/company04.png" width="227" height="229"></a>
+				<h3><a href="/company/contact">お問合わせ</a></h3>
 				<p>オーガニックパパへのお問合わせはこちら</p>
 			</div>
 			<img src="/images/dot.png" width="708" height="8" class="dot">

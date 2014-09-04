@@ -8,7 +8,7 @@
 		</ul>
 		<ul class="fNnav01">
 			<li><a href="/company">企業情報</a></li>
-			<li><a href="https://organic-papa.sakura.ne.jp/company/mail/">お問合わせ</a></li>
+			<li><a href="/company/contact">お問合わせ</a></li>
 		</ul>
 		<div class="fNnav02 clearfix">
 			<h3>オーガニックパパへのお問合わせ先</h3>
@@ -18,7 +18,7 @@
 				<p>営業時間10:00～19:00</p>
 			</div>
 			<div class="infoForm">
-				<p><a href="https://organic-papa.sakura.ne.jp/company/mail/">お問合わせフォーム</a></p>
+				<p><a href="/company/contact">お問合わせフォーム</a></p>
 			</div>
 		</div>
 	</div>
