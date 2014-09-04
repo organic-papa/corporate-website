@@ -56,9 +56,12 @@ class CompanyController extends BaseController
 			]);
 		}
 
+		$params['category'] = $params['inquiry'];
+		$inquiry = new Inquiry($params);
+		$inquiry->save();
+
 		$mail = new MailSender;
 		$params['inquiryName'] = MasterData::contactInquiryByKey($params['inquiry']);
-		var_dump($params);
 		$mail->sendInquireForAdmin($params);
 		return Redirect::to('company/contact/complete');
 	}
