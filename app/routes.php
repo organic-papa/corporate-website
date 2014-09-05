@@ -44,3 +44,15 @@ Route::group(['before' => 'csrf'], function()
 	Route::post('/company/contact/proc', 'CompanyController@contactProc');
 });
 Route::get('/company/contact/complete', 'CompanyController@contactComplete');
+
+// /post
+Route::get('/regular', 'RegularController@index');
+Route::get('/regular/register', 'RegularController@register');
+
+
+
+// inner api
+Route::group(['before' => 'csrf'], function()
+{
+	Route::get('/home/zip2add', 'HomeController@zip2add');
+});

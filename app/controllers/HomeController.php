@@ -2,22 +2,32 @@
 
 class HomeController extends BaseController {
 
-	/*
-	|--------------------------------------------------------------------------
-	| Default Home Controller
-	|--------------------------------------------------------------------------
-	|
-	| You may wish to use controllers instead of, or in addition to, Closure
-	| based routes. That's great! Here is an example controller method to
-	| get you started. To route to this controller, just add the route:
-	|
-	|	Route::get('/', 'HomeController@showWelcome');
-	|
-	*/
-
-	public function showWelcome()
+	public function zip2add()
 	{
-		return View::make('hello');
+		if (!Request::ajax())
+		{
+			App::abort('404');
+		}
+
+		$zipcode = Input::get('zipcode');
+		if (!$zipcode)
+		{
+			return Response::json(['status' => 'ng'], 400);
+		}
+
+		$zip = Zip::where('zipcode', $zipcode)->first();
+		if (!$zip)
+		{
+			return Response::json(['status' => 'ng'], 400);
+		}
+
+		return Response::json([
+			'status' => 'success',
+			'code'  => MasterData::prefectureByName($zip->state),
+			'state' => $zip->state,
+			'city' => $zip->city,
+			'town' => $zip->town,
+		]);
 	}
 
 }
