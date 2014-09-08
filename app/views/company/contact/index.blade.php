@@ -92,7 +92,6 @@
 						</tr>
 					</table>
 					<input id="submit_button" type="submit" name="input_submit" value="確認する" class="botton">
-					{{ Form::token(); }}
 				{{ Form::close() }}
 			</div>
 			<p id="back-top">

@@ -2,7 +2,7 @@
 
 namespace Traits\Validators;
 
-trait ContactValidator
+trait RegularValidator
 {
 	protected function contactValidateRule()
 	{
@@ -11,33 +11,45 @@ trait ContactValidator
 			return $inq['key'];
 		}, $inquiries);
 
+		$set = \MasterData::regularSets();
+		$setIn = array_map(function($s) {
+			return $s['key'];
+		}, $set);
+
 		return [
-			'inquiry' => ['required', 'in:'.implode(',', $inquiriesIn)],
-			'company' => ['max:100'],
-			'name' => ['required', 'max:100'],
+			'set' => ['required', 'in:'.implode(',', $setIn)],
+			'count' => [],
+			'pay' => [],
+			'first_choice' => [],
+			'second_choice' => [],
+			'third_choice' => [],
+			'time' => [],
+			'name01' => ['required', 'max:100'],
+			'name02' => ['required', 'max:100'],
+			'kana01' => ['max:100'],
+			'kana02' => ['max:100'],
+			'zip01' => ['required', 'regex:/^[0-9]+$/'],
+			'zip02' =>  ['required', 'regex:/^[0-9]+$/'],
+			'pref' => ['required', 'regex:/^[0-9]{2}$/'],
+			'addr01' => ['required', 'max:100'],
+			'addr02' => ['max:100'],
+			'tel01' => ['regex:/^[0-9]+$/'],
+			'tel02' => ['regex:/^[0-9]+$/'],
+			'tel03' => ['regex:/^[0-9]+$/'],
 			'email' => ['required', 'email', 'confirmed'],
 			'email_confirmation' => ['required', 'email'],
-			'tel' => ['regex:/^[0-9]{9,12}$/'],
-			'body' => ['required', 'max:1000'],
+			'other' => ['max: 1000'],
 		];
 	}
 
 	protected function contactValidateMessage()
 	{
 		return [
-			'inquiry.required' => 'お問合せ内容を選択してください',
-			'inquiry.in' => 'お問合せ内容を選択してください',
-			'company.max' => '法人・事業者名は100文字以内で入力してください',
-			'name.required' => 'お名前を入力してください',
-			'name.max' => 'お名前は100文字以内で入力してください',
 			'email.required' => 'メールアドレスを入力してください',
 			'email.email' => '正しいメールアドレスを入力してください',
 			'email.confirmed' => 'メールアドレスとメールアドレス(確認)が一致しません',
 			'email_confirmation.required' => 'メールアドレス(確認)を入力してください',
 			'email_confirmation.email' => '正しいメールアドレスを入力してください',
-			'tel.regex' => '電話番号は数字にて入力してください',
-			'body.required' => 'お問い合わせ内容を入力してください',
-			'body.max' => 'お問い合わせ内容は1000文字以内で入力してください',
 		];
 	}
 

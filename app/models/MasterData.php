@@ -75,5 +75,18 @@ class MasterData
 
 		return $key;
 	}
+
+	/**
+	 * お問い合わせ種別
+	 */
+	public static function regularSets()
+	{
+		return [
+			['key' => 1, 'value' => 'PAPAのミニセット（3,000円）'],
+			['key' => 2, 'value' => 'PAPAセット（4,000円）'],
+			['key' => 3, 'value' => 'PAPAのボリュームセット（5,000円）'],
+		];
+	}
+
 }
 

@@ -60,7 +60,6 @@
 					<input type="hidden" name="email_confirmation" value="{{ $params['email_confirmation'] }}">
 					<input type="hidden" name="tel" value="{{ $params['tel'] }}">
 					<input type="hidden" name="body" value="{{ $params['body'] }}">
-					{{ Form::token(); }}
 				{{ Form::close() }}
 			</div>
 			<p id="back-top">

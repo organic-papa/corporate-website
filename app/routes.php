@@ -47,8 +47,10 @@ Route::get('/company/contact/complete', 'CompanyController@contactComplete');
 
 // /post
 Route::get('/regular', 'RegularController@index');
-Route::get('/regular/register', 'RegularController@register');
-
+Route::group(['before' => 'csrf'], function()
+{
+	Route::post('/regular/register', 'RegularController@register');
+});
 
 
 // inner api
