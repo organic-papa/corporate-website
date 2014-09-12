@@ -20,9 +20,12 @@ class RegularController extends BaseController
 			return Response::json(['status' => 'ng', 'messages' => $messages], 400);
 		}
 
-		// TODO 登録処理
-		// $user = new User($params);
-		// $user->save();
+		// 会員登録処理
+		$user = new User(Input::all());
+		$user->setDefaultValues();
+		$user->save();
+
+		// 定期注文登録処理
 
 		// TODO メール配信
 
