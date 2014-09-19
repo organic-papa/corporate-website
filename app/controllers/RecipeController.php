@@ -27,7 +27,7 @@ class RecipeController extends BaseController
 	  {
 			App::abort(404);
 		}
-		return json_decode(file_get_contents($path));
+		return json_decode($content);
 	}
 
 	protected function getRecipe($id)

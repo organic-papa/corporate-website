@@ -21,6 +21,17 @@
 			</div>
 			<div class="ContentsBox">
 				<div class="ContentsMain">
+					<a href="/event/2"><img src="/images/event/002.jpg" width="223" height="163"></a>
+					<div class="ContentsIn">
+						<p class="labelEvent">Event</p>
+						<p class="ContentsTitle"><a href="/event/2">2014/9/13(土)・14(日) 太陽のマルシェに出店します。</a></p>
+						<p class="ContentsText">日本最大級の都市型マルシェが勝どきで開かれます。日本全国からこだわりの農家さんが集い、その時々に採れたフレッシュな旬の野菜や果物、加工品を、生産者との会話を楽しみながら購入できます。</p>
+					</div>
+				</div>
+				<p class="ContentsLink"><a href="/event/2">続きを読む</a></p>
+			</div>
+			<div class="ContentsBox">
+				<div class="ContentsMain">
 					<a href="/event/1"><img src="/images/event/001.jpg" width="223" height="163"></a>
 					<div class="ContentsIn">
 						<p class="labelEvent">Event</p>

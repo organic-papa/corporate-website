@@ -30,7 +30,7 @@ Route::get('/post/recipe/{id}', 'RecipeController@show');
 // /event
 Route::get('/event', function() { return View::make('event.index'); });
 Route::get('/event/marche', function() { return View::make('event.marche'); });
-Route::get('/event/1', 'EventController@show');
+Route::get('/event/{id}', 'EventController@show');
 
 // /company
 Route::get('/company', function() { return View::make('company.index'); });
