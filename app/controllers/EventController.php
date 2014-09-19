@@ -13,7 +13,7 @@ class EventController extends BaseController
 		$path = app_path() . '/data/events.json';
 		$content = file_get_contents($path);
 		if (!$content)
-	  {
+		{
 			App::abort(404);
 		}
 
