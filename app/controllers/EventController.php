@@ -17,9 +17,7 @@ class EventController extends BaseController
 			App::abort(404);
 		}
 
-		Log::info($content);
 		$events = json_decode($content);
-		Log::info($events);
 		foreach ($events as $event)
 		{
 			if ($event->id == $id)
