@@ -88,3 +88,16 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
+
+/**
+ * force ssl filter
+ */
+Route::filter('force.ssl', function()
+{
+	$envs = ['production', 'staging'];
+	if (!Request::secure() && array_search(App::environment(), $envs) !== false)
+	{
+		return Redirect::secure(Request::getRequestUri());
+	}
+});
+

@@ -37,19 +37,25 @@ Route::get('/company', function() { return View::make('company.index'); });
 Route::get('/company/summary', function() { return View::make('company.summary'); });
 Route::get('/company/greeting', function() { return View::make('company.greeting'); });
 Route::get('/company/business_alliance', function() { return View::make('company.businessAlliance'); });
-Route::match(['GET', 'POST'], '/company/contact', 'CompanyController@contactInput');
-Route::group(['before' => 'csrf'], function()
+Route::group(['before' => 'force.ssl'], function()
 {
-	Route::post('/company/contact/confirm', 'CompanyController@contactConfirm');
-	Route::post('/company/contact/proc', 'CompanyController@contactProc');
+	Route::match(['GET', 'POST'], '/company/contact', 'CompanyController@contactInput');
+	Route::group(['before' => 'csrf'], function()
+	{
+		Route::post('/company/contact/confirm', 'CompanyController@contactConfirm');
+		Route::post('/company/contact/proc', 'CompanyController@contactProc');
+	});
+	Route::get('/company/contact/complete', 'CompanyController@contactComplete');
 });
-Route::get('/company/contact/complete', 'CompanyController@contactComplete');
 
 // /post
-Route::get('/regular', 'RegularController@index');
-Route::group(['before' => 'csrf'], function()
+Route::group(['before' => 'force.ssl'], function()
 {
-	Route::post('/regular/register', 'RegularController@register');
+	Route::get('/regular', 'RegularController@index');
+	Route::group(['before' => 'csrf'], function()
+	{
+		Route::post('/regular/register', 'RegularController@register');
+	});
 });
 
 
