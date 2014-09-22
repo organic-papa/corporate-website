@@ -6,24 +6,34 @@ trait RegularValidator
 {
 	protected function contactValidateRule()
 	{
-		$inquiries = \MasterData::contactInquiries();
-		$inquiriesIn = array_map(function($inq) {
-			return $inq['key'];
-		}, $inquiries);
-
 		$set = \MasterData::regularSets();
 		$setIn = array_map(function($s) {
 			return $s['key'];
 		}, $set);
 
+		$cycles = \MasterData::deliveryCycles();
+		$cyclesIn = array_map(function($s) {
+			return $s['key'];
+		}, $cycles);
+
+		$payments = \MasterData::payments();
+		$paymentsIn = array_map(function($s) {
+			return $s['key'];
+		}, $payments);
+
+		$times = \MasterData::deliveryTimes();
+		$timesIn = array_map(function($s) {
+			return $s['key'];
+		}, $times);
+
 		return [
 			'set' => ['required', 'in:'.implode(',', $setIn)],
-			'count' => [],
-			'pay' => [],
+			'cycle' => ['required', 'in:'.implode(',', $cyclesIn)],
+			'payment' => ['required', 'in:'.implode(',', $paymentsIn)],
 			'first_choice' => [],
 			'second_choice' => [],
 			'third_choice' => [],
-			'time' => [],
+			'time' => ['required', 'in:'.implode(',', $timesIn)],
 			'name01' => ['required', 'max:100'],
 			'name02' => ['required', 'max:100'],
 			'kana01' => ['max:100'],
