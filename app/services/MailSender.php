@@ -7,6 +7,7 @@ class MailSender
 
 	public function sendRegularApplication($data)
 	{
+		$this->sendRegularApplicationUser($data);
 		$this->sendRegularApplicationAdmin($data);
 	}
 }
