@@ -13,6 +13,8 @@
 			"app/controllers",
 			"app/models",
 			"app/models/observers",
+			"app/models/traits",
+			"app/models/traits/masters",
 			"app/services",
 			"app/utils",
 			"app/database/migrations",

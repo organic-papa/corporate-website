@@ -9,32 +9,33 @@
 			<td class="tdLeft">ご希望のセット<br><span class="requiredArea">【必須】</span></td>
 			<td class="tdRight">
 				<p id="spryselect_area">
-					<select name="set" id="">
+					<select name="set">
 						<option value="" selected="">選択してください</option>
-						<option value="1">PAPAのミニセット（3,000円）</option>
-						<option value="2">PAPAセット（4,000円）</option>
-						<option value="3">PAPAのボリュームセット（5,000円）</option>
+						@foreach ($sets as $set)
+						<option value="{{{ $set['key'] }}}">{{{ $set['value'] }}}</option>
+						@endforeach
 					</select>
 			</p></td>
 		</tr>
 		<tr>
 			<td>宅配回数<br><span class="requiredArea">【必須】</span></td>
 			<td>
-				<select name="count" id="宅配回数">
+				<select name="cycle" id="宅配回数">
 					<option value="" selected="">選択してください</option>
-					<option value="毎週">毎週</option>
-					<option value="月2回">月2回</option>
-					<option value="月1回">月1回</option>
-					<option value="お試し1回限り">お試し1回限り</option>
+					@foreach ($cycles as $cycle)
+					<option value="{{{ $cycle['key'] }}}">{{{ $cycle['value'] }}}</option>
+					@endforeach
 				</select>
 			</td>
 		</tr>
 		<tr>
 			<td>お支払方法<br><span class="requiredArea">【必須】</span></td>
 			<td>
-				<select name="pay" id="お支払方法">
-					<option value="" selected="">選択してください</option>
-					<option value="代金引換">代金引換</option>
+				<select name="payment" id="お支払方法">
+					<option value="">選択してください</option>
+					@foreach ($payments as $payment)
+					<option value="{{{ $payment['key'] }}}" @if ($payment['default'])selected="selected"@endif>{{{ $payment['value'] }}}</option>
+					@endforeach
 				</select>
 			</td>
 		</tr>
@@ -42,14 +43,14 @@
 			<td>配達希望日</td>
 			<td>第一希望日
 				<p>
-					<input type="text" size="10" name="first_wish" id="フリガナ2" autocomplete="on" value="">
+					<input type="text" size="10" name="first_choice" autocomplete="on" value="">
 					例：8月7日<br>
 					<br>
 					第二希望日
-					</p><p><input type="text" size="10" name="second_wish" id="フリガナ" autocomplete="on" value="">
+					</p><p><input type="text" size="10" name="second_choice" autocomplete="on" value="">
 					例：8月10日<br><br>
 					第三希望日
-					</p><p><input type="text" size="10" name="third_wish" id="フリガナ" autocomplete="on" value="">
+					</p><p><input type="text" size="10" name="third_choice" autocomplete="on" value="">
 					例：8月20日<br><br>
 				</p>
 			</td>
@@ -59,12 +60,9 @@
 			<td>
 				<select name="time" id="配達時間帯">
 					<option value="" selected="">選択してください</option>
-					<option value="午前中">午前中</option>
-					<option value="12時～14時">12時～14時</option>
-					<option value="14時～16時">14時～16時</option>
-					<option value="16時～18時">16時～18時</option>
-					<option value="18時～20時">18時～20時</option>
-					<option value="20時～21時">20時～21時</option>
+					@foreach ($times as $time)
+					<option value="{{{ $time['key'] }}}">{{{ $time['value'] }}}</option>
+					@endforeach
 				</select>
 			</td>
 		</tr>

@@ -15,7 +15,7 @@
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
 <meta http-equiv="Content-Type" content="text/html">
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="/common/js/jquery.mousewheel.min.js"></script>
 <script type="text/javascript" src="/common/js/jquery.easie.js"></script>
 <script type="text/javascript" src="/common/js/jquery.animate.js"></script>

@@ -7,8 +7,13 @@ class RegularController extends BaseController
 
 	public function index()
 	{
-		$prefs = MasterData::prefectureCodes();
-		return View::make('regular.index', ['prefs' => $prefs]);
+		return View::make('regular.index', [
+			'prefs' => MasterData::prefectureCodes(),
+			'sets' => MasterData::regularSets(),
+			'cycles' => MasterData::deliveryCycles(),
+			'payments' => MasterData::payments(),
+			'times' => MasterData::deliveryTimes(),
+		]);
 	}
 
 	public function register()
@@ -20,14 +25,18 @@ class RegularController extends BaseController
 			return Response::json(['status' => 'ng', 'messages' => $messages], 400);
 		}
 
+		$params = Input::all();
+
 		// 会員登録処理
-		$user = new User(Input::all());
+		$user = new User($params);
 		$user->setDefaultValues();
-		$user->save();
+		// $user->save();
 
 		// 定期注文登録処理
 
-		// TODO メール配信
+		// メール配信
+		$mail = new MailSender;
+		$mail->sendRegularApplication($params);
 
 		return Response::json(['status' => 'success'], 200);
 	}

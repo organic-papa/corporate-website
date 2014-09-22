@@ -62,7 +62,7 @@ class CompanyController extends BaseController
 
 		$mail = new MailSender;
 		$params['inquiryName'] = MasterData::contactInquiryByKey($params['inquiry']);
-		$mail->sendInquireForAdmin($params);
+		$mail->sendInquireAdmin($params);
 		return Redirect::to('company/contact/complete');
 	}
 

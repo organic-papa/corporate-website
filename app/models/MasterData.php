@@ -2,6 +2,8 @@
 
 class MasterData
 {
+	use Traits\Masters\RegularService;
+
 	/**
 	 * お問い合わせ種別
 	 */
@@ -62,6 +64,8 @@ class MasterData
 	 */
 	public static function prefectureByName($name)
 	{
+		if (!$name) return '';
+
 		$code = '';
 		$prefs = self::prefectureCodes();
 		foreach ($prefs as $key => $val)
@@ -73,19 +77,48 @@ class MasterData
 			}
 		}
 
-		return $key;
+		return $code;
 	}
 
 	/**
-	 * お問い合わせ種別
+	 * 都道府県コードから都道府県名を取得する
 	 */
-	public static function regularSets()
+	public static function prefectureByCode($code)
 	{
-		return [
-			['key' => 1, 'value' => 'PAPAのミニセット（3,000円）'],
-			['key' => 2, 'value' => 'PAPAセット（4,000円）'],
-			['key' => 3, 'value' => 'PAPAのボリュームセット（5,000円）'],
-		];
+		if (!$code) return '';
+
+		$name = '';
+		$prefs = self::prefectureCodes();
+		foreach ($prefs as $key => $val)
+		{
+			if ((int) $code === (int) $key)
+			{
+				$name = $val;
+				break;
+			}
+		}
+
+		return $name;
+	}
+
+	/**
+	 * マスターデータのkeyからvalueを取得
+	 */
+	private static function getNameByCode($datas, $code)
+	{
+		if (!$code) return '';
+
+		$name = '';
+		foreach ($datas as $data)
+		{
+			if ((int) $code === $data['key'])
+			{
+				$name = $data['value'];
+				break;
+			}
+		}
+
+		return $name;
 	}
 
 }
