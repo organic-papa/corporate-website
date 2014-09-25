@@ -88,3 +88,24 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
+
+/**
+ * force ssl filter
+ */
+Route::filter('force.ssl', function()
+{
+	$envs = ['production', 'staging'];
+	if (!Request::secure() && array_search(App::environment(), $envs) !== false)
+	{
+		return Redirect::secure(Request::getRequestUri());
+	}
+});
+Route::filter('force.nossl', function()
+{
+	$envs = ['production', 'staging'];
+	if (Request::secure() && array_search(App::environment(), $envs) !== false)
+	{
+		return Redirect::to(Request::getRequestUri(), 302, [], false);
+	}
+});
+
