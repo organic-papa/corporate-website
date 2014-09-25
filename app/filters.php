@@ -103,7 +103,7 @@ Route::filter('force.ssl', function()
 Route::filter('force.nossl', function()
 {
 	$envs = ['production', 'staging'];
-	if (!Request::secure() && array_search(App::environment(), $envs) !== false)
+	if (Request::secure() && array_search(App::environment(), $envs) !== false)
 	{
 		return Redirect::to(Request::getRequestUri(), 302, [], false);
 	}
