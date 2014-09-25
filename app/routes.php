@@ -11,9 +11,9 @@
 |
 */
 
-// /
-Route::group(['before' => 'force.ssl'], function()
+Route::group(['before' => 'force.nossl'], function()
 {
+	// /
 	Route::get('/', function() { return View::make('index'); });
 
 	// /formmer
