@@ -12,7 +12,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	protected $table = 'dtb_customer';
 
 	protected $fillable = ['name01', 'name02', 'kana01', 'kana02', 'zip01', 'zip02',
-		'pref', 'addr01', 'addr02', 'email', 'tel01', 'tel02', 'tel03'];
+		'pref', 'addr01', 'addr02', 'email', 'tel01', 'tel02', 'tel03', 'entry_pathway'];
 
 	const CREATED_AT = 'create_date';
 	const UPDATED_AT = 'update_date';
@@ -23,6 +23,15 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 * @var array
 	 */
 	protected $hidden = array('password', 'remember_token');
+
+	/**
+	 * 侵入経路
+	 */
+	protected static $entryPathways = [
+		['name' => 'fb', 'value' => 1],
+		['name' => 'marche', 'value' => 2],
+		['name' => 'unknown', 'value' => -1],
+	];
 
 	/**
 	 * 初期登録時に自動設定されるカラムの定義
@@ -54,6 +63,22 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	public function buildSecretKey()
 	{
 		return PapaHash::blowfish(time());
+	}
+
+	/**
+	 * 侵入経路名から侵入経路コードを取得する
+	 */
+	public static function entryPathwayByName($name)
+	{
+		foreach (self::$entryPathways as $path)
+		{
+			if ($path['name'] == $name)
+			{
+				return $path['value'];
+			}
+		}
+
+		return -1;
 	}
 }
 

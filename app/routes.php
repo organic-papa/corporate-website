@@ -61,6 +61,7 @@ Route::group(['before' => 'force.ssl'], function()
 
 	// /regular
 	Route::get('/regular', 'RegularController@index');
+	Route::get('/regular/{name}', 'RegularController@indexWithPathName');
 	Route::group(['before' => 'csrf'], function()
 	{
 		Route::post('/regular/register', 'RegularController@register');

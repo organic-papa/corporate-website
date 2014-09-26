@@ -7,6 +7,21 @@ class RegularController extends BaseController
 
 	public function index()
 	{
+		return $this->_index();
+	}
+
+	public function indexWithPathName($name)
+	{
+		$entryPathway = User::entryPathwayByName($name);
+		if ($entryPathway !== -1)
+		{
+			Session::put('entryPathway', $entryPathway);
+		}
+		return $this->_index();
+	}
+
+	private function _index()
+	{
 		return View::make('regular.index', [
 			'prefs' => MasterData::prefectureCodes(),
 			'sets' => MasterData::regularSets(),
@@ -26,6 +41,7 @@ class RegularController extends BaseController
 		}
 
 		$params = Input::all();
+		$params['entry_pathway'] = Session::get('entryPathway', -1);
 
 		// 会員登録処理
 		$user = new User($params);
@@ -36,7 +52,7 @@ class RegularController extends BaseController
 
 		// メール配信
 		$mail = new MailSender;
-		$mail->sendRegularApplication($params);
+		// $mail->sendRegularApplication($params);
 
 		return Response::json(['status' => 'success'], 200);
 	}
