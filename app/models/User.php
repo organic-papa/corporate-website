@@ -30,6 +30,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	protected static $entryPathways = [
 		['name' => 'fb', 'value' => 1],
 		['name' => 'marche', 'value' => 2],
+		['name' => 'bio_w', 'value' => 3],
 		['name' => 'unknown', 'value' => -1],
 	];
 
