@@ -303,18 +303,6 @@ h1 {
 	overflow:hidden;
 }
 
-.ContentsMain .thumb {
-	display: block;
-	height: 163px;
-	overflow: hidden;
-	zoom: 1;
-}
-
-.ContentsMain .thumb img {
-	max-width: 223px;
-	min-width: 223px;
-	height: auto;
-}
 
 .ContentsIn {
 	padding:3px 10px 10px 10px;
@@ -1043,12 +1031,6 @@ p.blogTitle2 {
 	width:616px;
 }
 
-.requiredArea {
-	font-size:90%;
-	color:#FF0000;
-	margin:0 0 0 -5px;
-}
-
 input#submit_button {
 	padding: 20px 50px;
 	font-size:120%;
@@ -1366,10 +1348,16 @@ input#submit_button {
 	width:530px;
 }
 
+.errorMsg {
+	font-size:90%;
+	color:#FF0000;
+	margin:0 0 0 0;
+}
+
 .requiredArea {
 	font-size:90%;
 	color:#FF0000;
-	margin:0 0 0 -5px;
+	margin:0 0 0 0;
 }
 
 input#submit_button {
@@ -1389,6 +1377,7 @@ input#submit_button {
 #back-top {
 	position: fixed;
 	bottom: 30px;
+	right:0;
 	margin-left: 745px;
 }
 #back-top a {
@@ -1534,4 +1523,248 @@ input#submit_button {
 	color:#fff;
 	text-align:center;
 }
+/* LP(9/22)
+--------------------------------------------------------*/
+
+#lpContents {
+	margin:0 auto;
+	width:980px;
+	background:url(../../images/lp/body_bk.gif) ;
+}
+.lpLogo {
+	text-align:center;
+	background:url(../../images/lp/keyBg.png) 3px 6px no-repeat;
+	height:711px;
+}
+#lpContents h1 {
+	padding:322px 0 20px 0;
+}
+
+#lpContents a:hover img, .lpMain a:hover img{
+ 	 -moz-opacity:1.0;
+  	opacity:1.0;
+}
+
+#lpContents .lptop {
+	background:url(../../images/lp/body_bk.gif) ;
+	text-align:center;
+}
+#lpContents .lptopIn {
+	background:url(../../images/lp/keyBottom.png) no-repeat ;
+	height:185px;
+	margin:0 auto;
+}
+#lpContents .lptopIn p {
+	width:557px;
+	text-align:left;
+	margin:0 auto;
+	padding:39px 0 0 0;
+	font-size:120%;
+}
+.lpYasai01 {
+	margin:0 0 0 13px;
+}
+.lpYasai01In {
+	background:url(../../images/lp/bg_center.png) repeat-y ;
+	padding:0 0 0 40px;
+	width:912px;
+}
+.lpYasai02In {
+	background:url(../../images/lp/bg_center2.png) repeat-y ;
+	padding:0 0 0 40px;
+	width:912px;
+}
+.img03R {
+	float:right;
+	margin:0 40px 0 0;
+	padding:0 0 30px 30px;
+}
+.lpYasai01In h2, .lpYasai01 h2 {
+	font-size:180%;
+	font-weight:bold;
+	padding:10px 0 0 0;
+	color:#ED4E58;
+}
+.lpYasai01In p, .lpYasai02In p {
+	padding:8px 0px 7px;
+	width:458px;
+	font-size:120%;
+}
+.lpYasai01In p.lpPoint, .lpYasai02In p.lpPoint {
+	padding:14px 0 20px 0;
+	width:860px;
+}
+.lpMain {
+	margin:0 auto;
+	width:980px;
+	background:url(../../images/lp/body_bk.gif) ;
+}
+
+.lpPack {
+	background:url(../../images/lp/packBg.png) ;
+	height:705px;
+	text-align:center;
+	margin: 50px 0 0 0;
+}
+.teikiBtn2 {
+	margin:508px 0 0 0;
+}
+.lpFeature {
+	margin: 80px 0 0 0;
+	text-align:center;
+}
+.feature03 {
+	padding:20px 0 0 0;
+}
+.feature05 {
+	padding:20px 0 0 0;
+}
+
+.lpMain2 {
+	margin:0 auto;
+	width:980px;
+	background-color:#FFF6DA;
+	padding-bottom: 50px;
+}
+
+.hoba {
+	background:url(../../images/lp/hoba.png) no-repeat ;
+	height:374px;
+	text-align:center;
+}
+.hoba h2 {
+	font-size:260%;
+	color:#fff;
+	padding:44px 0 0 0;
+}
+.hoba01 {
+	text-align:left;
+	padding:32px 1px 1px 43px;
+	font-size:160%;
+	color:#D59325;
+}
+.hoba02 {
+	padding:9px 1px 1px 43px;
+	width:538px;
+	text-align:left;
+	font-size:110%;
+}
+.flowH2 {
+	background:url(../../images/lp/pack.png) 144px 0 no-repeat ;
+	font-size:260%;
+	padding:19px 0px 16px 260px;
+	margin:33px 0 0 0;
+	font-weight: bold;
+}
+ul.flowList {
+	position: relative;
+    left: 50%;
+	float: left;
+	margin:30px 0 0 0;
+}
+ul.flowList li {
+	width:298px;
+	height:344px;
+	float:left;
+	text-align:center;
+	position: relative;
+    left: -50%;
+	background: url(../../images/lp/arrow2.png) 1px 1px no-repeat;
+}
+
+
+
+ul.flowList li:last-child {
+	background: url(../../images/lp/arrow3.png) no-repeat;
+}
+
+
+ul.flowList li p.flowList01 {
+	font-size:140%;
+	font-weight:bold;
+	padding:37px 0px 10px 24px;
+	margin:0 51px 0 0;
+}
+ul.flowList li p.flowList02 {
+	text-align:left;
+	padding:0 0 30px 24px;
+	width:220px;
+}
+ul.flowList li img {
+	margin:0 33px 0 0;
+}
+.payH2 {
+	clear:both;
+	font-size:260%;
+	padding:19px 0px 16px 260px;
+	margin:33px 0 0 0;
+	font-weight: bold;
+}
+
+.lpPay {
+	width:760px;
+	background-color:#fff;
+	padding:40px;
+	border:8px solid #FFCE7D;
+	margin:0 auto;
+}
+.lpPay h3 {
+	font-size:120%;
+}
+
+.lpPay h3.lpPayH3 {
+	padding:20px 0 0  0;
+}
+.lPTable {
+	margin: 50px 0 0 50px;
+	
+}
+.lPTable table {
+    clear: both;
+    text-align: left;
+    margin: 0px 0px 0 50px;
+    width: 786px;
+    font-size: 120%;
+	padding-bottom:30px;
+}
+
+.lPTable table td {
+    border-bottom: 1px dotted #CCC;
+    padding: 20px 0px 20px 20px;
+}
+.lPTable table .tdLeft {
+    width: 170px;
+}
+.lPTable table .tdRight {
+    width: 616px;
+}
+.lPTable table td select {
+    padding: 15px 10px;
+    font-size: 120%;
+}
+.lPTable table td input {
+    padding: 15px 10px;
+    font-size: 120%;
+}
+.lPTableIn {
+	background: url(../../images/lp/lpForm_center.png) repeat-y;
+	
+}
+.lPTable .botton {
+	text-align:center;
+	margin:0 auto;
+	display:block;
+}
+.lpcCopy {
+	text-align:center;
+	margin:50px 0 0 0;
+}
+
+
+
+
+
+
+
+
 

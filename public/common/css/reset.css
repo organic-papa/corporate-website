@@ -48,7 +48,7 @@ a:visited {
 }
 
 img {
-   vertical-align:bottom
+   vertical-align:bottom;
 }
 .red {
 	color:#FF0000;
