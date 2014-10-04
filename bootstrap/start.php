@@ -26,7 +26,9 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('little-witch.local'),
+	'local' => ['little-witch.local'],
+	'staging' => ['www4113up.sakura.ne.jp', 'staging.organic-papa.com'],
+	'production' => ['www1201up.sakura.ne.jp', 'organic-papa.com'],
 
 ));
 
