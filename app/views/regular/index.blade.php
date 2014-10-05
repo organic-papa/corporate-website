@@ -134,25 +134,25 @@
 					<tr>
 						<td class="tdLeft">ご希望のセット<br /><span class="requiredArea">【必須】</span></td>
 						<td class="tdRight">
-							<select name="set">
+							<select name="set_type">
 								<option value="" selected="">選択してください</option>
 								@foreach ($sets as $set)
 								<option value="{{{ $set['key'] }}}">{{{ $set['value'] }}}</option>
 								@endforeach
 							</select>
-							<p class="errorMsg js-error-set"></p>
+							<p class="errorMsg js-error-set_type"></p>
 						</td>
 					</tr>
 					<tr>
 						<td>宅配回数<br /><span class="requiredArea">【必須】</span></td>
 						<td>
-							<select name="cycle">
+							<select name="delivery_cycle">
 								<option value="" selected="">選択してください</option>
 								@foreach ($cycles as $cycle)
 								<option value="{{{ $cycle['key'] }}}">{{{ $cycle['value'] }}}</option>
 								@endforeach
 							</select>
-							<p class="errorMsg js-error-cycle"></p>
+							<p class="errorMsg js-error-delivery_cycle"></p>
 						</td>
 					</tr>
 					<!--
@@ -194,13 +194,13 @@
 					<tr>
 						<td>配達時間帯</td>
 						<td>
-							<select name="time">
+							<select name="delivery_time">
 								<option value="" selected="">選択してください</option>
 								@foreach ($times as $time)
 								<option value="{{{ $time['key'] }}}">{{{ $time['value'] }}}</option>
 								@endforeach
 							</select>
-							<p class="errorMsg js-error-time"></p>
+							<p class="errorMsg js-error-delivery_time"></p>
 						</td>
 					</tr>
 					<tr>
@@ -280,8 +280,8 @@
 					<tr>
 						<td>その他</td>
 						<td>
-							<textarea cols="50" rows="5" name="other"></textarea>
-							<p class="errorMsg js-error-other"></p>
+							<textarea cols="50" rows="5" name="note"></textarea>
+							<p class="errorMsg js-error-note"></p>
 							<p>※1,000文字以内で入力してください。</p>
 						</td>
 					</tr>
