@@ -4,16 +4,17 @@
 ご確認よろしくお願いいたします。
 
 
+-------------------------------------------------
 [ご希望のセット]
-{{ MasterData::regularSetByCode($set) }}
+{{ MasterData::regularSetByCode($set_type) }}
 
 
 [宅配回数]
-{{ MasterData::deliveryCycleByCode($cycle) }}
+{{ MasterData::deliveryCycleByCode($delivery_cycle) }}
 
 
 [お支払い方法]
-{{ MasterData::paymentByCode($payment) }}
+代金引換
 
 
 [配達希望日]
@@ -23,7 +24,7 @@
 
 
 [配達時間帯]
-{{ MasterData::deliveryTimeByCode($time) }}
+{{ MasterData::deliveryTimeByCode($delivery_time) }}
 
 
 [お名前]
@@ -48,4 +49,5 @@
 
 
 [備考]
-{{ $other }}
+{{ $note }}
+-------------------------------------------------

@@ -27,13 +27,13 @@ trait RegularValidator
 		}, $times);
 
 		return [
-			'set' => ['required', 'in:'.implode(',', $setIn)],
-			'cycle' => ['required', 'in:'.implode(',', $cyclesIn)],
+			'set_type' => ['required', 'in:'.implode(',', $setIn)],
+			'delivery_cycle' => ['required', 'in:'.implode(',', $cyclesIn)],
 			//'payment' => ['required', 'in:'.implode(',', $paymentsIn)],
 			'first_choice' => ['max:15'],
 			'second_choice' => ['max:15'],
 			'third_choice' => ['max:15'],
-			'time' => ['in:'.implode(',', $timesIn)],
+			'delivery_time' => ['in:'.implode(',', $timesIn)],
 			'name01' => ['required', 'max:100'],
 			'name02' => ['required', 'max:100'],
 			'kana01' => ['required', 'max:100'],
@@ -48,22 +48,22 @@ trait RegularValidator
 			'tel03' => ['required', 'regex:/^[0-9]{2,4}$/'],
 			'email' => ['required', 'email', 'confirmed'],
 			'email_confirmation' => ['required', 'email'],
-			'other' => ['max: 1000'],
+			'note' => ['max: 1000'],
 		];
 	}
 
 	protected function contactValidateMessage()
 	{
 		return [
-			'set.required' => 'ご希望のセットを選択してください',
-			'set.in' => 'ご希望のセットを選択してください',
-			'cycle.required' => '宅配回数を選択してください',
-			'cycle.in' => '宅配回数を選択してください',
+			'set_type.required' => 'ご希望のセットを選択してください',
+			'set_type.in' => 'ご希望のセットを選択してください',
+			'delivery_cycle.required' => '宅配回数を選択してください',
+			'delivery_cycle.in' => '宅配回数を選択してください',
 			'first_choice.max' => '第一希望日を正しく入力してください',
 			'second_choice.max' => '第二希望日を正しく入力してください',
 			'third_choice.max' => '第三希望日を正しく入力してください',
-			'time.required' => '配達時間帯を選択してください',
-			'time.in' => '配達時間帯を選択してください',
+			'delivery_time.required' => '配達時間帯を選択してください',
+			'delivery_time.in' => '配達時間帯を選択してください',
 			'name01.required' => '名前(性)を入力してください',
 			'name01.max' => 'お名前(性)は100文字以内で入力してください',
 			'name02.required' => 'お名前(名)を入力してください',
@@ -92,7 +92,7 @@ trait RegularValidator
 			'email.confirmed' => 'メールアドレスとメールアドレス(確認)が一致しません',
 			'email_confirmation.required' => 'メールアドレス(確認)を入力してください',
 			'email_confirmation.email' => '正しいメールアドレスを入力してください',
-			'other.max' => 'その他は1000文字以内で入力してください',
+			'note.max' => 'その他は1000文字以内で入力してください',
 		];
 	}
 
@@ -102,8 +102,5 @@ trait RegularValidator
 			$this->contactValidateRule(),
 			$this->contactValidateMessage()
 		);
-	}
-
-	public function validateCheckChoice($attribute, $value, $params, $validator) {
 	}
 }
