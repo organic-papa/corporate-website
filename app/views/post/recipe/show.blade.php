@@ -46,7 +46,7 @@
 				<img src="/images/dot.png" class="dot" height="8" width="708">
 			</div>
 
-			<div class="btnEc"><a href="https://organic-papa.sakura.ne.jp/post/mail/"><img src="../../images/BTN_ec.png" width="663" height="101"></a></div>
+			<div class="btnEc"><a href="/regular"><img src="/images/BTN_ec.png" width="663" height="101"></a></div>
 				<p id="back-top">
 					<a href="#top"><span></span>&nbsp;</a>
 				</p>

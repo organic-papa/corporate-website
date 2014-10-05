@@ -44,7 +44,7 @@
 			<!--/ContentsBox-->
 
 			<div class="btnEc">
-				<a href="https://organic-papa.sakura.ne.jp/post/mail/"><img src="/images/BTN_ec.png" width="663" height="101"></a>
+				<a href="/regular"><img src="/images/BTN_ec.png" width="663" height="101"></a>
 			</div>
 
 			<p id="back-top">

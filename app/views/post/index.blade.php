@@ -16,7 +16,7 @@
 				<h2>PAPA野菜の直送便</h2>
 				<p class="center"><img src="/images/barance.png" width="713" height="197"></p>
 				<p>旬のおいしい九州有機野菜を中心にした品揃えです。<br />全国各地の飲食店様や食品加工会社様、給食センター様などの<br />「<span class="red">事業者向けの卸業務</span>」と、お好みに応じて詰め合わせのリクエストが可能な<br />「<span class="red">個人様向けの宅配野菜</span>」の発送を承っております。</p>
-				<p class="center"><a href="https://organic-papa.sakura.ne.jp/post/mail/"><img src="/images/Btn01.png" width="338" height="61"></a></p>
+				<p class="center"><a href="/regular"><img src="/images/Btn01.png" width="338" height="61"></a></p>
 				<img src="/images/dot.png" width="708" height="8" class="dot">
 
 				<h2>おいしいレシピ</h2>
@@ -33,7 +33,7 @@
 			<!--/formmerSubContents-->
 
 			<div class="btnEc">
-				<a href="https://organic-papa.sakura.ne.jp/post/mail/"><img src="/images/BTN_ec.png" width="663" height="101"></a>
+				<a href="/regular"><img src="/images/BTN_ec.png" width="663" height="101"></a>
 			</div>
 
 			<p id="back-top">
