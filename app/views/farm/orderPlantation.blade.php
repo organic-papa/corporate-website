@@ -16,7 +16,7 @@
 				<h2>注文農園のススメ</h2>
 				<div class="formmerIn">
 					<h3>注文農園のススメ</h3>
-					<img src="../images/order_plantation.jpg" class="ArticlePhoto">
+					<img src="/images/order_plantation.jpg" class="ArticlePhoto">
 					<p>私たちは、お客様の様々なニーズに合わせて、農園新設工事を受託する企業です。<br />
 すなわち、「のうえん屋」です。今は、同業者とお会いしたことがありませんが、これからは増えてくるでしょう。<br /><br />
 
@@ -38,18 +38,18 @@
 そのような農園整備を作付け前に行った畑は、以下のように良好な農園環境に向かっていきます。</p>
 					<p class="textCom">有機農業は「土づくり」から。</h4>
 					<p class="textCom">作付け前に、しっかりと土づくりをした場合のメリット</p>
-					<p class="textCom"><img src="../images/arrow-down.png"></p>
-					<p class="textCom"><img src="../images/order_plantation2.jpg"></p>
+					<p class="textCom"><img src="/images/arrow-down.png"></p>
+					<p class="textCom"><img src="/images/order_plantation2.jpg"></p>
 					<p class="textCom">そのような環境でできたお野菜たちは</p>
-					<p class="textCom"><img src="../images/arrow-down.png"></p>
-					<p class="textCom"><img src="../images/order_plantation3.jpg"></p>
+					<p class="textCom"><img src="/images/arrow-down.png"></p>
+					<p class="textCom"><img src="/images/order_plantation3.jpg"></p>
 					<p>いいことばかりですね。<br />このように、まずは計画をしっかり立てて、事前に農園整備工事を行うことで、<br />楽しいファーム運営が現実のものとなります。<br />
 				</div>
 			</div>
 			<!--/subContents-->
 
 			<div class="btnEc">
-				<a href="https://organic-papa.sakura.ne.jp/post/mail/"><img src="../images/BTN_ec.png" width="663" height="101"></a>
+				<a href="/regular"><img src="/images/BTN_ec.png" width="663" height="101"></a>
 			</div>
 			<p id="back-top">
 				<a href="#top"><span></span>&nbsp;</a>

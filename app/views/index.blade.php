@@ -36,14 +36,14 @@
 
 				<div class="ContentsBox">
 					<div class="ContentsMain">
-						<a href="/post/mail/"><img src="/images/pos-papap.jpg" width="223" height="163"></a>
+						<a href="/regular"><img src="/images/pos-papap.jpg" width="223" height="163"></a>
 						<div class="ContentsIn">
 							<p class="labelVegetables">vegetables</p>
-							<p class="ContentsTitle"><a href="/post/mail/">無農薬・有機栽培　オーガニックパパのお野菜直送便</a></p>
+							<p class="ContentsTitle"><a href="/regular">無農薬・有機栽培　オーガニックパパのお野菜直送便</a></p>
 							<p class="ContentsText">旬のおいしい九州有機野菜を中心にした品揃えです。全国各地の飲食店様や食品加工会社様、給食センター様などの「事業者向けの卸業務」と、</p>
 						</div>
 					</div>
-					<p class="ContentsLink"><a href="/post/mail/">続きを読む</a></p>
+					<p class="ContentsLink"><a href="/regular">続きを読む</a></p>
 				</div>
 				<!--/ContentsBox-->
 				<div class="ContentsBox">
@@ -125,7 +125,7 @@
 					</div><!--/pickupBoxR-->
 				</div><!--/pickup-->
 				<div class="btnEc">
-					<a href="/post/mail/"><img src="/images/BTN_ec.png" width="663" height="101"></a>
+					<a href="/regular"><img src="/images/BTN_ec.png" width="663" height="101"></a>
 				</div>
 				<div class="likebox">
 					<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Forganicpapa&amp;width=732&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=145812885627490" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:732px; height:290px;" allowTransparency="true"></iframe>
@@ -136,7 +136,7 @@
 				</p>
 			</div><!--/mainRight-->
 			<div class="mainLeft">
-				<a href="/post/mail/"><img src="/images/ban_ec.jpg" width="225" height="208"></a>
+				<a href="/regular"><img src="/images/ban_ec.jpg" width="225" height="208"></a>
 				<ul>
 					<li class="lNav01top"><a href="/farm">農園づくり</a></li>
 					<li class="lNav02top"><a href="/post">お届けできるお野菜</a></li>

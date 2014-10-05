@@ -1,5 +1,5 @@
 <div class="mainLeft">
-	<a href="https://organic-papa.sakura.ne.jp/post/mail/"><img src="/images/ban_ec.jpg" width="225" height="208"></a>
+	<a href="/regular"><img src="/images/ban_ec.jpg" width="225" height="208"></a>
 	<ul class="lNav">
 		<li class="lNav01"><a href="/company">企業情報</a></li>
 		<ul>

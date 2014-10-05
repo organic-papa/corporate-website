@@ -1,8 +1,8 @@
-<div class="mainLeft"><a href="https://organic-papa.sakura.ne.jp/post/mail/"><img src="../images/ban_ec.jpg" width="225" height="208"></a>
+<div class="mainLeft"><a href="/regular"><img src="/images/ban_ec.jpg" width="225" height="208"></a>
 	<ul class="lNav">
 		<li class="lNav02"><a href="/post">お届けできるお野菜</a></li>
 		<ul>
-			<li class=""><a href="https://organic-papa.sakura.ne.jp/post/mail/">PAPA野菜の直送便</a></li>
+			<li class=""><a href="/regular">PAPA野菜の直送便</a></li>
 			<li class=""><a href="/post/recipes">おいしいレシピ</a></li>
 			{{--<li class=""><a href="_yahiro-blog/index.html">八尋健次のココロとカラダのメンテブログ</a></li>--}}
 			<li class="{{{ $active == 'postFarmer' ? 'active' : '' }}}"><a href="/post/farmer">提携農園について</a></li>
