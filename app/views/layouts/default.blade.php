@@ -21,6 +21,8 @@
 <script type="text/javascript" src="/common/js/jquery.easie.js"></script>
 <script type="text/javascript" src="/common/js/jquery.animate.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+
+@include('shares.ga')
 </head>
 
 <body>
