@@ -4,7 +4,7 @@
 <header id="lpContents">
 	<div class="lpLogo">
 		<h1><img src="/images/lp/logo.png" width="462" height="84"></h1>
-		<a href="#form"><img src="/images/lp/teikiBtn.png"></a>
+		<a href="javascript:void(0);" class="js-scroll-to-form"><img src="/images/lp/teikiBtn.png"></a>
 	</div>
 	<div class="lptop">
 		<img src="/images/lp/lpImg01.png" width="723" height="168">
@@ -88,7 +88,7 @@
 	<!--/ lpYasai01-->
 
 	<div class="lpPack">
-		<a href="form"><img src="/images/lp/teikiBtn2.png" width="831" height="134" class="teikiBtn2"></a>
+		<a href="javascript:void(0);" class="js-scroll-to-form"><img src="/images/lp/teikiBtn2.png" width="831" height="134" class="teikiBtn2"></a>
 	</div>
 	<div class="lpFeature">
 		<img src="/images/lp/feature01.png" width="980" height="103">
@@ -99,7 +99,7 @@
 		<img src="/images/lp/feature06.png" width="980" height="1082">
 	</div>
 	<div class="lpPack">
-		<a href="#form"><img src="/images/lp/teikiBtn2.png" width="831" height="134" class="teikiBtn2"></a>
+		<a href="javascript:void(0);" class="js-scroll-to-form"><img src="/images/lp/teikiBtn2.png" width="831" height="134" class="teikiBtn2"></a>
 	</div>
 </div>
 <!--/ lpMain -->
@@ -125,7 +125,7 @@
 		<h3 class="lpPayH3">■お支払方法</h3>
 		<p>現在、<span class="red">料金代引きのみ</span>の対応となっております。</p>
 	</div>
-	<div class="lPTable">
+	<div class="lPTable js-application-table">
 		<img src="/images/lp/lpForm_top.png" width="876" height="111">
 		<div class="lPTableIn">
 			{{ Form::open(['url' => '/company/contact/confirm', 'class' => 'js-register-form']) }}
@@ -318,6 +318,13 @@
 $(function() {
 	var token = "{{{ csrf_token() }}}";
 
+	// scroll to form.
+	$('.js-scroll-to-form').on('click', function() {
+		var position = $('.js-application-table').offset().top - 30;
+		$('html,body').animate({ scrollTop: position }, 'fast');
+	});
+
+	// entry address from zipcode.
 	$('.js-zip2add').on('click', function() {
 		$('.js-error-zip01').empty();
 
@@ -351,6 +358,7 @@ $(function() {
 		});
 	});
 
+	// submit data.
 	$('.js-submit').on('click', function() {
 		var $button = $(this);
 		var $loading = $('#loading');
