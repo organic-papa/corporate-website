@@ -40,12 +40,6 @@ Route::group(['before' => 'force.nossl'], function()
 	Route::get('/company/greeting', function() { return View::make('company.greeting'); });
 	Route::get('/company/business_alliance', function() { return View::make('company.businessAlliance'); });
 
-
-	// inner api
-	Route::group(['before' => 'csrf'], function()
-	{
-		Route::get('/home/zip2add', 'HomeController@zip2add');
-	});
 });
 
 Route::group(['before' => 'force.ssl'], function()
@@ -65,5 +59,12 @@ Route::group(['before' => 'force.ssl'], function()
 	Route::group(['before' => 'csrf'], function()
 	{
 		Route::post('/regular/register', 'RegularController@register');
+	});
+
+	// TODO https必須でなくとも動くようにする
+	// inner api
+	Route::group(['before' => 'csrf'], function()
+	{
+		Route::get('/home/zip2add', 'HomeController@zip2add');
 	});
 });
