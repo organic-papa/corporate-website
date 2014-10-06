@@ -79,3 +79,11 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+
+/**
+ * 404 Error Handle
+ */
+App::missing(function ($e)
+{
+	return Redirect::to('/');
+});
