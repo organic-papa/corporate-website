@@ -22,13 +22,13 @@
 				<h2>おいしいレシピ</h2>
 				<p class="center"><img src="/images/post-01.jpg" width="630" height="201"></p>
 				<p>PAPA野菜を美味しく食べるおすすめレシピを紹介します。</p>
-				<p class="center"><a href="_recipe/index.html"><img src="/images/Btn02.png" width="338" height="61"></a></p>
+				<p class="center"><a href="/post/recipes"><img src="/images/Btn02.png" width="338" height="61"></a></p>
 				<img src="/images/dot.png" width="708" height="8" class="dot">
 
 				<h2>「家庭の食育」販売中</h2>
-				<p class="center"><a href="book.html"><img src="/images/kateino_shokuiku.jpg" width="350" height="448"></a></p>
+				<p class="center"><a href="/post/book"><img src="/images/kateino_shokuiku.jpg" width="350" height="448"></a></p>
 				<p>「家庭の食育」を発行しました。</p>
-				<p class="center"><a href="book.html"><img src="/images/Btn04.png" width="338" height="61"></a></p>
+				<p class="center"><a href="/post/book"><img src="/images/Btn04.png" width="338" height="61"></a></p>
 			</div>
 			<!--/formmerSubContents-->
 
