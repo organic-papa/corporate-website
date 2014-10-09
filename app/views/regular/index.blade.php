@@ -3,14 +3,15 @@
 @section('content')
 <header id="lpContents">
 	<div class="lpLogo">
-		<h1><img src="/images/lp/logo.png" width="462" height="84"></h1>
-		<a href="javascript:void(0);" class="js-scroll-to-form"><img src="/images/lp/teikiBtn.png"></a>
+		<h1><img src="/images/lp/logo.png" alt="からだにおいしい九州野菜をあなたの食卓に" width="462" height="84"></h1>
+		<a href="javascript:void(0);" class="js-scroll-to-form"><img src="/images/lp/teikiBtn.png" alt="オーガニック野菜宅配セットのお申込み"></a>
 	</div>
 	<div class="lptop">
-		<img src="/images/lp/lpImg01.png" width="723" height="168">
+		<img src="/images/lp/lpImg01.png" width="723" height="168" alt="九州の採れたてオーガニック野菜をあなたの食卓に">
 		<div class="lptopIn">
 			<p>福岡の自社農園や九州各地の提携農家が、手をかけて育てた<span class="red">安心</span>な<span class="red">おいしい野菜</span>をあなたの食卓に届けます。過剰な肥料を利用することなく、また無理な作付けをすることもなく<span class="red">自然な環境</span>で育てられた旬の野菜は、<span class="red">栄養価も高く葉っぱまで</span>余すことなく食べることができます。</p>
 		</div>
+		<img src="/images/lp/keyBottom2.png" alt="季節の旬のお野菜をチョイスしてお届けします" width="615" height="163">
 	</div>
 </header>
 
@@ -88,18 +89,18 @@
 	<!--/ lpYasai01-->
 
 	<div class="lpPack">
-		<a href="javascript:void(0);" class="js-scroll-to-form"><img src="/images/lp/teikiBtn2.png" width="831" height="134" class="teikiBtn2"></a>
+		<a href="javascript:void(0);" class="js-scroll-to-form"><img src="/images/lp/teikiBtn2.png" alt="オーガニック野菜宅配セットのお申込み" width="831" height="134" class="teikiBtn2"></a>
 	</div>
 	<div class="lpFeature">
-		<img src="/images/lp/feature01.png" width="980" height="103">
-		<img src="/images/lp/feature03.png" width="924" height="231" class="feature03">
-		<img src="/images/lp/feature04.png" width="980" height="1281">
-		<img src="/images/lp/feature02.png" width="980" height="103">
-		<img src="/images/lp/feature05.png" width="980" height="258" class="feature05">
-		<img src="/images/lp/feature06.png" width="980" height="1082">
+		<img src="/images/lp/feature01.png" alt="オーガニックパパの野菜の特徴1" width="980" height="103">
+		<img src="/images/lp/feature03.png" alt="余すことなく食べられる、安心でおいしい野菜" width="924" height="231" class="feature03">
+		<img src="/images/lp/feature04.png" alt="オーガニックパパの野菜は自然のままだからおいしい" width="980" height="1281">
+		<img src="/images/lp/feature02.png" alt="オーガニックパパの野菜の特徴2" width="980" height="103">
+		<img src="/images/lp/feature05.png" alt="子供にこそ食べてもらいたい、安全な野菜" width="980" height="258" class="feature05">
+		<img src="/images/lp/feature06.png" alt="皮や葉には、大事な栄養素がたっぷり！免疫力アップ！抗酸化作用！" width="980" height="1082">
 	</div>
 	<div class="lpPack">
-		<a href="javascript:void(0);" class="js-scroll-to-form"><img src="/images/lp/teikiBtn2.png" width="831" height="134" class="teikiBtn2"></a>
+		<a href="javascript:void(0);" class="js-scroll-to-form"><img src="/images/lp/teikiBtn2.png" alt="オーガニック野菜宅配セットのお申込み" width="831" height="134" class="teikiBtn2"></a>
 	</div>
 </div>
 <!--/ lpMain -->
