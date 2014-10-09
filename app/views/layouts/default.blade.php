@@ -2,9 +2,9 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>オーガニック、有機農業、無農薬野菜、九州野菜なら【オーガニックパパ】</title>
-<meta name="description" content="" />
-<meta name="keywords" content="オーガニック,無農薬野菜,有機野菜,九州野菜,オーガニックパパ" />
+<title>{{{ isset($title) ? $title : 'オーガニック、有機農業、無農薬野菜、九州野菜なら【オーガニックパパ】' }}}</title>
+<meta name="description" content="{{{ isset($description) ? $description : '九州の無農薬野菜・有機野菜を全国各地にお届けするオーガニックパパです。また、有機農場をサポートするため、農園新設工事の受託も行っています。' }}}" />
+<meta name="keywords" content="{{{ isset($keywords) ? $keywords: 'オーガニック,無農薬野菜,有機野菜,九州野菜,オーガニックパパ,有機農場,受託' }}}" />
 <link href="/css/short.css" rel="stylesheet">
 <link href="/common/css/reset.css" rel="stylesheet">
 <link href="/common/css/common.css" rel="stylesheet">

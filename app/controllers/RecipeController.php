@@ -15,7 +15,10 @@ class RecipeController extends BaseController
 		$recipe = $this->getRecipe($id);
 		return View::make('post.recipe.show', [
 			'recipes' => $recipes,
-			'recipe' => $recipe
+			'recipe' => $recipe,
+			'title' => $recipe->title,
+			'description' => $recipe->description,
+			'keywords' => $recipe->keywords,
 		]);
 	}
 
