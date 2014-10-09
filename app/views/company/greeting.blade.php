@@ -1,4 +1,7 @@
 @extends('layouts.default')
+<?php $title = '企業情報 | 主宰あいさつ | オーガニックパパ'; ?>
+<?php $description = 'オーガニックパパの会社概要（主宰あいさつ）です。九州野菜をメインとしたオーガニック野菜といえばオーガニックパパへ。'; ?>
+<?php $keywords = 'オーガニックパパ,会社情報,主宰あいさつ'; ?>
 
 @section('content')
 
