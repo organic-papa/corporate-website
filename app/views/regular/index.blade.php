@@ -1,7 +1,7 @@
 @extends('layouts.default')
 <?php $title = '九州有機野菜| 旬のおいしいお野菜のご紹介【オーガニックパパ】'; ?>
 <?php $description = '安心・安全でおいしい野菜をお届けしております。「旬な野菜」をバランスよく、お任せパックで定期宅配します。事業者向けの卸業、個人様向けの野菜宅配はオーガニックパパへ。'; ?>
-<?php $keywords = 'オーガニック,無農薬野菜,有機野菜,九州有機野菜,定期宅'; ?>
+<?php $keywords = 'オーガニック,無農薬野菜,有機野菜,九州有機野菜,定期宅配'; ?>
 
 @section('content')
 <header id="lpContents">
@@ -67,7 +67,7 @@
 		<p>あのネバネバの正体は、タンパク質のムチン・食物繊維のペクチンやガラクタンなどです。ペクチンは血中コレステロールをへらし、血圧を下げる効果があります。</p>
 		<p>また、ムチンには胃の粘膜保護し、消化促進・整腸などの効果があります。
 		また、カロテン・ビタミン・カリウム・カルシウムなども多く含まれ、体の免疫系を整えることができます。</p>
-		<img src="/images/lp/lpImg05.png" width="348" height="72" alt="小松菜の調理ポイント">
+		<img src="/images/lp/lpImg05.png" width="348" height="72" alt="おくらの調理ポイント">
 		<p class="lpPoint">表面の産毛が残っていると食感がよくありません。塩をふり、まな板にこすりつけるようにすり合わせ、産毛を取ってください。また、下茹でする場合は茹で過ぎに注意してください。ぬめりと栄養をが抜けてしまうため、少し固めにさっと茹でるのがポイントです。</p>
 		</div>
 		<img src="/images/lp/bg_bottom.png" width="950" height="54">
@@ -84,7 +84,7 @@
 			<p>薬味としてお馴染みのみょうが。香り成分はαピネンという精油成分で、食欲増進・消化促進・血行促進などの硬化があります。</p>
 			<p>また、辛味成分には強い抗菌作用があり、発熱による体の不調を調えたり、解毒作用・喉の痛みなどへの効果が期待されます。</p>
 			<p>ちなみに、みょうがを食べ過ぎると馬鹿になるという逸話があります。これは、物忘れが激しい釈迦の弟子の一人の死後、お墓にみょうががたくさん生えていたことによるものです。なので、実際にみょうがを食べ過ぎると忘れっぽくなるというわけではありません。</p>
-			<img src="/images/lp/lpImg05.png" width="348" height="72" alt="にんじんの調理ポイント">
+			<img src="/images/lp/lpImg05.png" width="348" height="72" alt="みょうがの調理ポイント">
 			<p class="lpPoint">薬味として、またそのまま酢漬けにして食べます。アクが強いので、水にさらしてアクを抜きを行いますが、さらし過ぎると香りと辛味が抜けてしまいますので、さっと行ってください。</p>
 		</div>
 		<img src="/images/lp/bg_bottom2.png" width="950" height="54">
@@ -118,9 +118,9 @@
 	</div>
 	<h2 class="flowH2">お申込みからお届けまでの流れ</h2>
 	<ul class="flowList clearfix">
-		<li><p class="flowList01">フォームより注文</p><p class="flowList02">下記のご注文フォームにご記入のうえ、お申込みください。</p><img src="/images/lp/flow01.png" width="198" height="138"></li>
-		<li><p class="flowList01">野菜の収穫</p><p class="flowList02">その時期で最も良いお野菜をピックアップし、在庫を確保します。</p><img src="/images/lp/flow02.png" width="198" height="138"></li>
-		<li><p class="flowList01">ご自宅へ宅配</p><p class="flowList02">ご希望の日程に合わせて、採りたて野菜を梱包・発送致します。</p><img src="/images/lp/flow03.png" width="198" height="138"></li>
+		<li><p class="flowList01">フォームより注文</p><p class="flowList02">下記のご注文フォームにご記入のうえ、お申込みください。</p><img src="/images/lp/flow01.png" alt="フォームより野菜を注文" width="198" height="138"></li>
+		<li><p class="flowList01">野菜の収穫</p><p class="flowList02">その時期で最も良いお野菜をピックアップし、在庫を確保します。</p><img src="/images/lp/flow02.png" alt="野菜の収穫" width="198" height="138"></li>
+		<li><p class="flowList01">ご自宅へ宅配</p><p class="flowList02">ご希望の日程に合わせて、採りたて野菜を梱包・発送致します。</p><img src="/images/lp/flow03.png" alt="野菜を自宅へ配達" width="198" height="138"></li>
 	</ul>
 	<h2 class="payH2">宅配回数・お支払方法について</h2>
 	<div class="lpPay">
