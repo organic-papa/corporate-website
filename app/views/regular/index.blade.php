@@ -364,6 +364,8 @@ $(function() {
 
 	// submit data.
 	$('.js-submit').on('click', function() {
+		ga('send', 'event', 'Regular', 'click', 'application');
+
 		var $button = $(this);
 		var $loading = $('#loading');
 
@@ -389,9 +391,13 @@ $(function() {
 			'url': '/regular/register',
 			'data': data
 		}).done(function(msg, st, xhr) {
+			ga('send', 'event', 'Regular', 'done', 'application success');
+
 			$loading.hide().css({padding: '0'});
 			$('.finishMsg').show();
 		}).fail(function(xhr, st, error) {
+			ga('send', 'event', 'Regular', 'fail', 'application failure');
+
 			var position = 0;
 
 			var res = eval('(' + xhr.responseText + ')');

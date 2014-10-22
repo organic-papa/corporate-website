@@ -8,4 +8,8 @@
 	ga('create', '{{{ Config::get('const.analytics.tracking_id') }}}', 'auto');
 	ga('send', 'pageview');
 </script>
+@else
+<script>
+	var ga = ga || function() {};
+</script>
 @endif
