@@ -48,14 +48,14 @@
 				<!--/ContentsBox-->
 				<div class="ContentsBox">
 					<div class="ContentsMain">
-						<a href="/event/2"><img src="/images/event/002.jpg" width="223" height="163"></a>
+						<a href="/event/3"><img src="/images/event/003.jpg" width="223" height="163"></a>
 						<div class="ContentsIn">
 							<p class="labelEvent">Event</p>
-							<p class="ContentsTitle"><a href="/event/2">2014/9/13(土)・14(日) 太陽のマルシェに出店します。</a></p>
-							<p class="ContentsText">日本最大級の都市型マルシェが勝どきで開かれます。日本全国からこだわりの農家さんが集い、その時々に採れたフレッシュな旬の野菜や果物、加工品を、生産者との会話を楽しみながら購入できます。</p>
+							<p class="ContentsTitle"><a href="/event/3">食養生セミナー・菜園づくりセミナーを行います</a></p>
+							<p class="ContentsText">私たちは、人口が著しく自然減少する町の廃校や古民家、多用途の未使用施設を利用して、各種過敏症やアレルギーの 方々の転地療養施設を運営するプロジェクトを立上げ活動してきました。</p>
 						</div>
 					</div>
-					<p class="ContentsLink"><a href="/event/2">続きを読む</a></p>
+					<p class="ContentsLink"><a href="/event/3">続きを読む</a></p>
 				</div>
 				<!--/ContentsBox-->
 				<div class="ContentsBox">
