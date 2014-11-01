@@ -18,8 +18,12 @@
 							<p class="categoryTitle">{{$event->category}}</p>
 							<p class="categoryDay">{{$event->date}}</p>
 						</div>
+						@if ($event->top_photo)
 						<img src="{{$event->top_photo}}" width="223" height="163" class="titlePhoto">
 						<h2 class="articleH2">{{$event->title}}</h2>
+						@else
+						<h2 class="articleH2 ml15">{{$event->title}}</h2>
+						@endif
 						<img src="/images/dot.png" width="708" height="8" class="dotLine">
 						<div class="howtoMain">
 							<img src="{{$event->body_photo}}" width="234" height="312" class="ArticlePhoto">
@@ -48,4 +52,17 @@
 
 @include('shares/footer')
 
+@stop
+
+@section('end_script')
+<script type="text/javascript">
+$(function() {
+	$('.js-toggle').on('click', function() {
+		$this = $(this);
+		$target = $this.data('toggle-class');
+		$($this.data('toggle-class')).slideToggle();
+		return false;
+	});
+});
+</script>
 @stop

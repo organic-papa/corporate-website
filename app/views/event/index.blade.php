@@ -21,6 +21,17 @@
 			</div>
 			<div class="ContentsBox">
 				<div class="ContentsMain">
+					<a href="/event/3"><img src="/images/event/003.jpg" width="223" height="163"></a>
+					<div class="ContentsIn">
+						<p class="labelEvent">Event</p>
+						<p class="ContentsTitle"><a href="/event/3">食養生セミナー・菜園づくりセミナーを行います</a></p>
+						<p class="ContentsText">私たちは、人口が著しく自然減少する町の廃校や古民家、多用途の未使用施設を利用して、各種過敏症やアレルギーの 方々の転地療養施設を運営するプロジェクトを立上げ活動してきました。</p>
+					</div>
+				</div>
+				<p class="ContentsLink"><a href="/event/3">続きを読む</a></p>
+			</div>
+			<div class="ContentsBox">
+				<div class="ContentsMain">
 					<a href="/event/2"><img src="/images/event/002.jpg" width="223" height="163"></a>
 					<div class="ContentsIn">
 						<p class="labelEvent">Event</p>
