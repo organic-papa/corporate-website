@@ -109,3 +109,14 @@ Route::filter('force.nossl', function()
 	}
 });
 
+/**
+ * Filter to avoid the access of the sub-domain.
+ */
+Route::filter('force.nosubdomain', function()
+{
+	if (strpos(Request::root(), 'www.organic-papa.com') !== false)
+	{
+		$url = 'https://organic-papa.com' . Request::getRequestUri();
+		return Redirect::to($url, 302, [], false);
+	}
+});

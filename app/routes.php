@@ -42,7 +42,7 @@ Route::group(['before' => 'force.nossl'], function()
 
 });
 
-Route::group(['before' => 'force.ssl'], function()
+Route::group(['before' => ['force.ssl', 'force.nosubdomain']], function()
 {
 	// /company/contact
 	Route::match(['GET', 'POST'], '/company/contact', 'CompanyController@contactInput');
