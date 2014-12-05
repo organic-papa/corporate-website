@@ -21,6 +21,17 @@
 			</div>
 			<div class="ContentsBox">
 				<div class="ContentsMain">
+					<a href="/event/4"><img src="/images/event/004.jpg" width="223" height="163"></a>
+					<div class="ContentsIn">
+						<p class="labelEvent">News</p>
+						<p class="ContentsTitle"><a href="/event/4">有機野菜専門店「オーガニックパパ勝どき」がOPEN</a></p>
+						<p class="ContentsText">太陽のマルシェ常設店のオーガニックパパが東京「勝どき」に八百屋をオープンします。自社農園・また全国各地から選りすぐりの有機野菜を揃えています。</p>
+					</div>
+				</div>
+				<p class="ContentsLink"><a href="/event/4">続きを読む</a></p>
+			</div>
+			<div class="ContentsBox">
+				<div class="ContentsMain">
 					<a href="/event/3"><img src="/images/event/003.jpg" width="223" height="163"></a>
 					<div class="ContentsIn">
 						<p class="labelEvent">Event</p>
