@@ -3,7 +3,7 @@
 	<ul class="lNav">
 		<li class="lNav03"><a href="/event">イベント・ニュース</a></li>
 		<ul>
-			<li class="{{{ $active == 'eventAll' ? 'active' : ''}}}"><a href="/event">すべて</a></li>
+			<li class="{{{ $active == 'eventAll' ? 'active' : ''}}}"><a href="/event/all">すべて</a></li>
 			<li class="{{{ $active == 'eventMarche' ? 'active' : ''}}}"><a href="/event/marche">マルシェ</a></li>
 			{{--
 			<!--<li class=""><a href="vegetables/index.html">お野菜紹介</a></li>
