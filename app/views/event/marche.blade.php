@@ -12,6 +12,10 @@
 		</div>
 		<div class="mainRight clearfix">
 			<div class="formmerSubContents">
+				<h2 class="event-color">イベントカレンダー</h2>
+			</div>
+			<div id='calendar' class="mt20 mb20"></div>
+			<div class="formmerSubContents">
 				<h2 class="event-color">イベント・ニュース</h2>
 			</div>
 			<div class="articleTitle">
@@ -58,4 +62,8 @@
 
 @include('shares/footer')
 
+@stop
+
+@section('end_script')
+	@include('event._fullcalendar')
 @stop

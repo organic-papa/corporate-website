@@ -31,6 +31,7 @@ Route::group(['before' => 'force.nossl'], function()
 
 	// /event
 	Route::get('/event', function() { return View::make('event.index'); });
+	Route::get('/event/all', function() { return View::make('event.all'); });
 	Route::get('/event/marche', function() { return View::make('event.marche'); });
 	Route::get('/event/{id}', 'EventController@show');
 
